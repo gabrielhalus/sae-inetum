@@ -17,11 +17,13 @@
         <script src="https://kit.fontawesome.com/f5af541bb0.js" crossorigin="anonymous"></script>
 
         <!-- javascript -->
-        <script src="./main.js" async defer></script>
+        <script src="./app.js" async defer></script>
 
     </head>
     <body>
     
+        <a href="#" id="scroll-to-top"><i class="fas fa-arrow-right"></i></a>
+
         <header class="section">
             <nav class="nav">
                 <a class="logo" href="#">
@@ -43,10 +45,23 @@
             </div>
         </header>
 
-        <div id="discover" class="gallery section">
-
-        </div>
-
+        <section id="discover" class="section">
+            <h1>Présentation</h1>
+            <div class="gallery">
+                <div id="txtdiscover">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A autem, officia optio harum, incidunt voluptates vel non dolore aspernatur veritatis eaque nobis esse corrupti consequatur, mollitia suscipit? Obcaecati deleniti numquam nulla doloribus. Itaque eius dicta sequi fugiat distinctio a exercitationem. Dolor reprehenderit maxime dolore libero eum vitae quibusdam expedita dicta?</p>
+                </div>
+    
+                <div id="imgdiscover">
+                    <div class="img-box">
+                        <span id="img1"></span>
+                        <span id="img2"></span>
+                        <span id="img3"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <div id="work" class="cards section">
             <div class="flip-card">
                 <div class="flip-card-inner">
@@ -64,7 +79,7 @@
                     <div class="flip-card-back">
                         <div class="back-card-content">
                             <h1>Secteurs</h1>
-                            <button id="btn-sector" class="cta white-btn">En savoir plus</button>
+                            <button id="btn-sector" class="cta white-btn modal-open" data-modal="modal1">En savoir plus</button>
                         </div>
                     </div>
                 </div>
@@ -86,7 +101,7 @@
                     <div class="flip-card-back">
                         <div class="back-card-content">
                             <h1>Transition</h1>
-                            <button id="btn-transition" class="cta white-btn">En savoir plus</button>
+                            <button id="btn-transition" class="cta white-btn modal-open" data-modal="modal2">En savoir plus</button>
                         </div>
                     </div>
                 </div>
@@ -108,44 +123,114 @@
                     <div class="flip-card-back">
                         <div class="back-card-content">
                             <h1>Clientelle</h1>
-                            <button id="btn-clients" class="cta white-btn">En savoir plus</button>
+                            <button id="btn-clients" class="cta white-btn modal-open" data-modal="modal3">En savoir plus</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Modals Boxes -->
+        <!-- Modals -->
 
-        <!-- Sector modal box -->
-        <div id="modal-sector" class="modal">
-
-            <!-- Modal content -->
+        <div class="modal" id="modal1">
             <div class="modal-content">
-                <span class="close">&times;</span>
-            </div>
-
+                <div class="modal-header">
+                    <h1>Secteurs</h1>
+                    <button class="modal-close"><i class="modal-close fas fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="grid-wrapper">
+                        <div class="grid-item item1">
+                            <div class="grid-item-header">
+                                <h1>Secteur public</h1>
+                                <hr>
+                            </div>
+                            <div class="grid-item-body">
+                                <div class="placeholder"></div>
+                                <p>
+                                    Inetum fournis des produits innovant et est en 
+                                    constante évolution, le secteur public demande 
+                                    toujours plus d’effort et représente un défi pour
+                                    les ingénieurs et scientifiques d’Inetum.
+                                </p>
+                                <p>
+                                    Nous fabriquons régulièrement des prototypes 
+                                    ayant pour but d’améliorer la vie des citoyens partout dans le monde.  
+                                    Inetum contribue également au développement numérique des ministères,
+                                    les autorité gouvernementales ainsi que les collectivités locales 
+                                    afin de sécuriser leur transition numérique.  
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid-item item2">
+                            <div class="grid-item-header">
+                                <h1>Energie & Utilitaires</h1>
+                                <hr>
+                            </div>
+                            <div class="grid-item-body">
+                                <p>
+                                    Inetum utilise les meilleurs
+                                    matériaux pour une 
+                                    production de très haute 
+                                    qualité avec un objectif “ zero défaut de conception”
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid-item item3">
+                            <div class="grid-item-header">
+                                <h1>Médical</h1>
+                                <hr>
+                            </div>
+                            <div class="grid-item-body">
+                                <p>
+                                    Inetum possède des laboratoires scientifiques, 
+                                    notamment des laboratoires pharmaceutiques. 
+                                    leur but, preserver la santé de la population à tout âge. 
+                                    L’ESN possède également des organismes de santé et 
+                                    médico-sociaux afin de promouvoir l’égalité 
+                                    d’accès aux soins pour tous.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button class="link modal-close">Close Modal</button> -->
+                </div>
+            </div> 
         </div>
 
-        <!-- Transition  modal box -->
-        <div id="modal-transition" class="modal">
-
-            <!-- Modal content -->
+        <div class="modal" id="modal2">
             <div class="modal-content">
-                <span class="close">&times;</span>
-            </div>
-
+                <div class="modal-header">
+                    Modal 2
+                    <button class="modal-close"><i class="modal-close far fa-times-circle"></i></button>
+                </div>
+                <div class="modal-body">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatum!
+                </div>
+                <div class="modal-footer">
+                    <!-- <button class="link modal-close">Close Modal</button> -->
+                </div>
+            </div> 
+        </div>
+    
+        <div class="modal" id="modal3">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Modal 3
+                    <button class="modal-close"><i class="modal-close far fa-times-circle"></i></button>
+                </div>
+                <div class="modal-body">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatum!
+                </div>
+                <div class="modal-footer">
+                    <!-- <button class="link modal-close">Close Modal</button> -->
+                </div>
+            </div> 
         </div>
 
-        <!-- Clients modal box -->
-        <div id="modal-clients" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-            </div>
-
-        </div>
+        <!-- Survey -->
 
         <div id="faq" class="survey section">
             
