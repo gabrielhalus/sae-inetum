@@ -7,18 +7,18 @@
         <title>Inetum</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        
         <link rel="icon" type="image/png" sizes="32x32" href="./images/fav-icon.jpg">
-
+        
         <!-- stylesheet -->
         <link rel="stylesheet" href="./styles.css">
-
+        
         <!-- font awesome -->
         <script src="https://kit.fontawesome.com/f5af541bb0.js" crossorigin="anonymous"></script>
-
+        
         <!-- javascript -->
-        <script src="./app.js" async defer></script>
-
+        <script src="./app.js" defer></script>
+        
     </head>
     <body>
     
@@ -39,24 +39,27 @@
             </nav>
 
             <div class="heading-title">
-                <h1>Inetum</h1>
-                <h2>We shape your digital flow</h2>
+                <hgroup>
+                    <h1>Inetum</h1>
+                    <h2>We shape your digital flow</h2>
+                </hgroup>
                 <a href="#discover"><button class="cta">Découvrir notre activité</button></a>
             </div>
         </header>
 
         <section id="discover" class="section">
-            <h1>Présentation</h1>
             <div class="gallery">
                 <div id="txtdiscover">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A autem, officia optio harum, incidunt voluptates vel non dolore aspernatur veritatis eaque nobis esse corrupti consequatur, mollitia suscipit? Obcaecati deleniti numquam nulla doloribus. Itaque eius dicta sequi fugiat distinctio a exercitationem. Dolor reprehenderit maxime dolore libero eum vitae quibusdam expedita dicta?</p>
+                    <h1>Présentation</h1>
+                    <p>Inetum est une entreprise basée en France proposant des services informatiques (ESN) aidant au développement numérique des entreprises en proposant des services de conseil et des logiciels d’accompagnement adaptés au secteur du client.</p>
+                    <p>Elle a commencé son activité dans les années 80, l’entreprise s’est rapidement étendue dans 26 pays du monde, principalement en Amérique, mais aussi sur plusieurs autres continents.</p>
                 </div>
     
                 <div id="imgdiscover">
                     <div class="img-box">
-                        <span id="img1"></span>
-                        <span id="img2"></span>
-                        <span id="img3"></span>
+                        <img src="./images/inetum2.jpg" alt="inetum" class="img1">
+                        <img src="./images/inetum3.jpg" alt="inetum" class="img2">
+                        <img src="./images/inetum1.jpg" alt="inetum" class="img3">
                     </div>
                 </div>
             </div>
@@ -79,7 +82,7 @@
                     <div class="flip-card-back">
                         <div class="back-card-content">
                             <h1>Secteurs</h1>
-                            <button id="btn-sector" class="cta white-btn modal-open" data-modal="modal1">En savoir plus</button>
+                            <button id="btn-sector" class="card-cta white-btn modal-open" data-modal="modal1">En savoir plus</button>
                         </div>
                     </div>
                 </div>
@@ -101,7 +104,7 @@
                     <div class="flip-card-back">
                         <div class="back-card-content">
                             <h1>Transition</h1>
-                            <button id="btn-transition" class="cta white-btn modal-open" data-modal="modal2">En savoir plus</button>
+                            <button id="btn-transition" class="card-cta white-btn modal-open" data-modal="modal2">En savoir plus</button>
                         </div>
                     </div>
                 </div>
@@ -111,7 +114,7 @@
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img src="./images/card-hero-factory.jpg" alt="card-hero-image">
-                        <h2>Clientelle</h2>
+                        <h2>Clientèle</h2>
                         <div class="front-card-content">
                             <p>Lorem ipsum dolor sit amet.</p>
                             <hr>
@@ -122,8 +125,8 @@
                     </div>
                     <div class="flip-card-back">
                         <div class="back-card-content">
-                            <h1>Clientelle</h1>
-                            <button id="btn-clients" class="cta white-btn modal-open" data-modal="modal3">En savoir plus</button>
+                            <h1>Clientèle</h1>
+                            <button id="btn-clients" class="card-cta white-btn modal-open" data-modal="modal3">En savoir plus</button>
                         </div>
                     </div>
                 </div>
@@ -139,60 +142,7 @@
                     <button class="modal-close"><i class="modal-close fas fa-times"></i></button>
                 </div>
                 <div class="modal-body">
-                    <div class="grid-wrapper">
-                        <div class="grid-item item1">
-                            <div class="grid-item-header">
-                                <h1>Secteur public</h1>
-                                <hr>
-                            </div>
-                            <div class="grid-item-body">
-                                <div class="placeholder"></div>
-                                <p>
-                                    Inetum fournis des produits innovant et est en 
-                                    constante évolution, le secteur public demande 
-                                    toujours plus d’effort et représente un défi pour
-                                    les ingénieurs et scientifiques d’Inetum.
-                                </p>
-                                <p>
-                                    Nous fabriquons régulièrement des prototypes 
-                                    ayant pour but d’améliorer la vie des citoyens partout dans le monde.  
-                                    Inetum contribue également au développement numérique des ministères,
-                                    les autorité gouvernementales ainsi que les collectivités locales 
-                                    afin de sécuriser leur transition numérique.  
-                                </p>
-                            </div>
-                        </div>
-                        <div class="grid-item item2">
-                            <div class="grid-item-header">
-                                <h1>Energie & Utilitaires</h1>
-                                <hr>
-                            </div>
-                            <div class="grid-item-body">
-                                <p>
-                                    Inetum utilise les meilleurs
-                                    matériaux pour une 
-                                    production de très haute 
-                                    qualité avec un objectif “ zero défaut de conception”
-                                </p>
-                            </div>
-                        </div>
-                        <div class="grid-item item3">
-                            <div class="grid-item-header">
-                                <h1>Médical</h1>
-                                <hr>
-                            </div>
-                            <div class="grid-item-body">
-                                <p>
-                                    Inetum possède des laboratoires scientifiques, 
-                                    notamment des laboratoires pharmaceutiques. 
-                                    leur but, preserver la santé de la population à tout âge. 
-                                    L’ESN possède également des organismes de santé et 
-                                    médico-sociaux afin de promouvoir l’égalité 
-                                    d’accès aux soins pour tous.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, saepe.
                 </div>
                 <div class="modal-footer">
                     <!-- <button class="link modal-close">Close Modal</button> -->
@@ -203,8 +153,8 @@
         <div class="modal" id="modal2">
             <div class="modal-content">
                 <div class="modal-header">
-                    Modal 2
-                    <button class="modal-close"><i class="modal-close far fa-times-circle"></i></button>
+                    <h1>Transition</h1>
+                    <button class="modal-close"><i class="modal-close fas fa-times"></i></button>
                 </div>
                 <div class="modal-body">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatum!
@@ -215,14 +165,14 @@
             </div> 
         </div>
     
-        <div class="modal" id="modal3">
+        <div class="modal" id="modal3">¬œ
             <div class="modal-content">
                 <div class="modal-header">
-                    Modal 3
-                    <button class="modal-close"><i class="modal-close far fa-times-circle"></i></button>
+                    <h1>Clientèle</h1>
+                    <button class="modal-close"><i class="modal-close fas fa-times"></i></button>
                 </div>
                 <div class="modal-body">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatum!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, iure!
                 </div>
                 <div class="modal-footer">
                     <!-- <button class="link modal-close">Close Modal</button> -->
@@ -232,10 +182,59 @@
 
         <!-- Survey -->
 
-        <div id="faq" class="survey section">
-            
-        </div>
+        <section id="faq" class="survey section">
 
-        <script src="main.js" defer></script>
+            <div class="faq1">
+                <button class="accordion">Comment qualifieriez-vous INETUM numériquement parlant ?</button>
+                <div class="panel">
+                    <p>Inetum est une ESN très avancée numériquement parlant, elle propose plusieurs services dans 26 pays et accompagne plusieurs secteurs dans leurs avancées technologiques, mais également dans leur transition écologique.</p>
+                </div>
+                <button class="accordion">Comment rendre les data base de l’entreprise plus écologiques ?</button>
+                <div class="panel">
+                    <p>Les data centers représentent environ 6% de la consommation mondiale d’électricité ce qui engendre de fortes émissions de CO2, ainsi pour réduire l’impact des data centers et par conséquent des data base, des entreprises comme Submer qui est une entreprise espagnole spécialisée dans la fabrication de bacs d’immersion pour environnement liquide, le but étant de refroidir les data center en transmettant la chaleur à un liquide diélectrique (= qui ne conduit pas l’électricité), le PUE des data center (= Power Usage Effectiveness) qui est l’unité utilisée pour définir le quotient énergétique d’un data center passerait de 1,6 à 1,03 le but étant de se rapprocher le plus possible de 1.</p>
+                </div>
+                <button class="accordion">Pourquoi les femmes sont-elles sous-représentées dans l’entreprise ?</button>
+                <div class="panel">
+                    <p>En général, l’activité de l’entreprise y joue beaucoup, en effet, étant donné que l’entreprise est tournée vers le numérique, les femmes sont souvent moins intéressées ou alors pas représentées par d’autres femmes de l’informatique par exemple, c’est donc pour cela que les hommes figurent bien plus que les femmes dans ce corps de métier.</p>
+                </div>
+                <button class="accordion">Comment faire en sorte que la parité soit respectée?</button>
+                <div class="panel">
+                    <p>Je pense que les femmes nécessitent un exemple à suivre, un modèle, il faudrait qu’une femme fasse une découverte dans l’informatique pour motiver d’autres femmes à travailler dans ce domaine. De plus, malheureusement les entreprises en général, embauchent moins de femmes pour de plus hauts postes à cause du risque de tomber enceinte notamment.</p>
+                </div>
+                <button class="accordion">Quel(s) conseil(s) donneriez-vous pour améliorer l’organisation interne de l’entreprise ?</button>
+                <div class="panel">
+                    <p>Nommer un CHO (Chief Happiness Officer) qui veillera au bien être des employés dans tous les secteurs de Inetum afin de pouvoir travailler dans de bonnes conditions.</p>
+                </div>
+            </div>
+
+            <div class="faq2">
+                <button class="accordion">Peut-on rendre les progiciels d’INETUM plus optimisés ?</button>
+                <div class="panel">
+                    <p>Les logiciels d’INETUM pourraient être plus optimisés si ils ciblaient des secteurs plus précis, cela implique de sacrifier une certaine part financière de l’entreprise pour plus s’investir dans la recherche et le développement des logiciels.</p>
+                </div>
+                <button class="accordion">Comment réduire la consommation énergétique de l’entreprise ?</button>
+                <div class="panel">
+                    <p>Tout d’abord, je dirais que, comme dit précédemment, rendre les programmes plus optimisés ferait moins tourner les serveurs. Malgré tout, ce n’est à mon sens pas nécessaire pour réduire la consommation. C’est pourquoi je propose plusieurs règles pour l’entreprise, comme par exemple délimiter des zones de chauffage ou encore aérer au lieu de chauffer ou de climatiser les pièces, en plus des data base qui peuvent être optimisées.</p>
+                </div>
+                <button class="accordion">Que pensez-vous de la digitalisation de l’entreprise ?</button>
+                <div class="panel">
+                    <p>Je la trouve assez avancée pour que l’on demande à Inetum des prototypes numériques et robotiques partout dans le monde. La technologie évolue de plus en plus et il est toujours possible d’améliorer les moyens numériques de l’entreprise pour toujours plus favoriser le travail des différents secteurs de l’entreprise.</p>
+                </div>
+                <button class="accordion">Comment voyez-vous l’évolution de l’entreprise dans une dizaine d’années ?</button>
+                <div class="panel">
+                    <p>Dans 10 ans, l'entreprise devrait avoir touché plus de secteurs dans plus de pays, et ainsi avoir de nouveaux moyens de financement pour des projets de recherches. De plus, je pense qu’avec le développement du numérique, INETUM à un avenir radieux mais devra quand même sacrifier une certaine part financière afin de la rendre plus respectueuse de l’environnement notamment avec certaines lois qui devraient être adoptées par l’Union Européenne et d’autres pays en général.</p>
+                </div>
+                <button class="accordion">Selon-vous, quelles sont les solutions afin de numériser l’entreprise tout en la rendant plus écologique ?</button>
+                <div class="panel">
+                    <p>Baser nos prototypes sur les énergies renouvelables afin qu’elles soient plus respectueuses de l’environnement.  Je pense aussi qu’elle se développera naturellement étant donné que les entreprises feront appel à INETUM, en effet, celles-cis sont peu qualifiées numériquement et donc demandent à INETUM, l’expansion géographique de INETUM joue aussi beaucoup et les entreprises etrangeres seront donc forcées de demander des services à INETUM, les questions précédentes permettent aussi de déterminer des solutions écologiques, notamment avec les data base qui consomment énormément.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <footer>
+            
+        </footer>
+        
     </body>
-</html>
+    </html>

@@ -1,3 +1,10 @@
+// Get scroll to top button
+mybutton = document.getElementById("scroll-to-top");
+
+/////////////////////////////////
+// Modal boxes (From w3school) //
+/////////////////////////////////
+
 var modalBtns = document.querySelectorAll('.modal-open');
 
 modalBtns.forEach(function(btn) {
@@ -6,6 +13,7 @@ modalBtns.forEach(function(btn) {
 
         document.getElementById(modal).style.display = 'block';
         document.body.style.overflow = 'hidden';
+        mybutton.style.display = "none";
     };
 });
 
@@ -15,6 +23,7 @@ closeBtns.forEach(function(btn) {
     btn.onclick = function() {
         var modal = btn.closest('.modal').style.display = 'none';
         document.body.style.overflow = 'auto';
+        mybutton.style.display = "block";
     };
 });
 
@@ -22,13 +31,13 @@ window.onclick = function(e) {
     if(e.target.className === 'modal') {
         e.target.style.display = 'none';
         document.body.style.overflow = 'auto';
+        mybutton.style.display = "block";
     }
 };
 
-// Button scroll to top (From w3school)
-
-//Get the button:
-mybutton = document.getElementById("scroll-to-top");
+//////////////////////////////////////////
+// Button scroll to top (From w3school) //
+//////////////////////////////////////////
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -39,4 +48,25 @@ function scrollFunction() {
 } else {
     mybutton.style.display = "none";
 }
+}
+
+///////////////////////////////
+// Accordion (From w3school) //
+///////////////////////////////
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            panel.style.margin = "0";
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            panel.style.margin = "0 0 15px 0";
+    }
+  });
 }
