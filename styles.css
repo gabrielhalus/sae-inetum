@@ -45,7 +45,7 @@ html {
 } 
 
 /* Scroll back to top button */
-#scroll-to-top {
+#btn-scroll-to-top {
     display: none;
     position: fixed;
     bottom: 15px;
@@ -63,7 +63,7 @@ html {
     animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
-#scroll-to-top i {
+#btn-scroll-to-top i {
     font-size: 20px;
 
     position: absolute;
@@ -76,11 +76,11 @@ html {
     
 }
 
-#scroll-to-top:hover {
+#btn-scroll-to-top:hover {
     background-color: rgba(50, 50, 50, .45);
 }
 
-#scroll-to-top:hover i {
+#btn-scroll-to-top:hover i {
     animation: bounce ease 2s infinite;
 }
 
@@ -100,6 +100,7 @@ h2 {
 }
 
 .section {
+    padding: 100px 0;
     min-height: 100vh;
 }
 
@@ -129,6 +130,7 @@ h2 {
 
 header {
     padding: 25px 50px;
+    min-height: 100vh;
 }
 
 .nav {
@@ -248,12 +250,15 @@ header {
 .img-box {
     position: relative;
     width: 80%;
-    height: 55%;
+    height: 70%;
 }
 
 #discover img {
     display: block;
     transition: 150ms;
+
+    width: 70%;
+    height: auto;
 
     background-color: rgba(247, 247, 247, .6);
 
@@ -275,27 +280,18 @@ header {
 }
 
 .img1 {
-    width: 400px;
-    height: auto;
-    
     position: absolute;
     top: 0;
     left: 0;
 }
 
 .img2 {
-    width: 400px;
-    height: auto;
-    
     position: absolute;
     top: 15%;
     right: 0;
 }
 
 .img3 {
-    width: 400px;
-    height: auto;
-    
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -591,7 +587,6 @@ header {
 /* --- --- --- --- --- --- --- */
 
 #faq {
-    padding: 100px 0;
     display: flex;
 }
 
@@ -711,12 +706,6 @@ footer a:hover::after {
     width: 80%;
 }
 
-footer img {
-    padding: 15px;
-    background-color:  #181a1a;
-    border-radius: 20px;
-}
-
 footer > div {
     width: 100%;
     display: flex;
@@ -729,7 +718,7 @@ footer > div ul {
 
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 footer > div div {

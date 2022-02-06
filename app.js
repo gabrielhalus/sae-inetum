@@ -1,9 +1,9 @@
 // Get scroll to top button
-mybutton = document.getElementById("scroll-to-top");
+mybutton = document.getElementById("btn-scroll-to-top");
 
 /////////////////////////////////
-// Modal boxes (From w3school) //
-/////////////////////////////////
+// Modal boxes (From CodePen) //
+////////////////////////////////
 
 var modalBtns = document.querySelectorAll('.modal-open');
 
