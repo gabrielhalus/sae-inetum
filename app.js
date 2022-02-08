@@ -1,45 +1,7 @@
-// Get scroll to top button
+// Bouton haut de la page
+
 mybutton = document.getElementById("btn-scroll-to-top");
 
-/////////////////////////////////
-// Modal boxes (From CodePen) //
-////////////////////////////////
-
-var modalBtns = document.querySelectorAll('.modal-open');
-
-modalBtns.forEach(function(btn) {
-    btn.onclick = function() {
-        var modal = btn.getAttribute('data-modal');
-
-        document.getElementById(modal).style.display = 'block';
-        document.body.style.overflow = 'hidden';
-        mybutton.style.display = "none";
-    };
-});
-
-var closeBtns = document.querySelectorAll('.modal-close');
-
-closeBtns.forEach(function(btn) {
-    btn.onclick = function() {
-        var modal = btn.closest('.modal').style.display = 'none';
-        document.body.style.overflow = 'auto';
-        mybutton.style.display = "block";
-    };
-});
-
-window.onclick = function(e) {
-    if(e.target.className === 'modal') {
-        e.target.style.display = 'none';
-        document.body.style.overflow = 'auto';
-        mybutton.style.display = "block";
-    }
-};
-
-//////////////////////////////////////////
-// Button scroll to top (From w3school) //
-//////////////////////////////////////////
-
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -50,9 +12,7 @@ function scrollFunction() {
 }
 }
 
-///////////////////////////////
-// Accordion (From w3school) //
-///////////////////////////////
+// Listes en accordéon
 
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -66,7 +26,7 @@ for (i = 0; i < acc.length; i++) {
             panel.style.padding = "0 18px"
         } else {
             panel.style.maxHeight = panel.scrollHeight + 20 + "px";
-            panel.style.padding = "10px 18px"
+            panel.style.padding = "10px 18px 0 18px"
     }
   });
 }
