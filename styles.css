@@ -260,10 +260,10 @@ header {
     width: 70%;
     height: auto;
 
-    background-color: rgba(247, 247, 247, .6);
+    /* background-color: rgba(247, 247, 247, .6); */
 
-    padding: 5px;
-    border: 5px solid var(--azraq-blue);
+    /* padding: 5px; */
+    /* border: 5px solid var(--azraq-blue); */
     border-radius: 10px;
 
     box-shadow: -5px 5px 15px #333;

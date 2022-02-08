@@ -63,10 +63,10 @@ for (i = 0; i < acc.length; i++) {
         var panel = this.nextElementSibling;
         if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
-            panel.style.margin = "0";
+            panel.style.padding = "0 18px"
         } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-            panel.style.margin = "0 0 15px 0";
+            panel.style.maxHeight = panel.scrollHeight + 20 + "px";
+            panel.style.padding = "10px 18px"
     }
   });
 }
