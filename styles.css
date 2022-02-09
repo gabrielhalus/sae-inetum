@@ -198,18 +198,22 @@ header a {
     color: var(--background-main);
     text-decoration: none;
 
-    transition: background .2s ease-in-out;
+    box-shadow: 0 5px 10px #bbb;
+
+    transition: background .2s, transform .2s, box-shadow .2s;
     margin-top: 30px;
 }
 
 header a:hover {
+    transform: translateY(5px);
+    box-shadow: none;
     color: var(--azraq-blue);
     background: var(--background-main);
 }
 
-/* --- --- --- --- --- --- */
-/*     <-- Présentation -->     */
-/* --- --- --- --- --- --- */
+/* --- --- --- --- --- --- --- */
+/*     <-- Présentation -->    */
+/* --- --- --- --- --- --- --- */
 
 section:nth-of-type(1) {    /* Section Présentation */
     display: flex;
@@ -243,7 +247,6 @@ section:nth-of-type(1) h1 {
     text-transform: uppercase;
     letter-spacing: .6rem;
     text-indent: .6rem;
-    margin: 25px 0;
 }
 
 section:nth-of-type(1)  > div div:nth-child(2) {
@@ -471,9 +474,9 @@ section:nth-of-type(2) > div > div > div:nth-child(2) > div hr {
     width: 85%;
 }
 
-/* --- --- --- --- --- --- --- */
-/*      <-- Accordion -->      */
-/* --- --- --- --- --- --- --- */
+/* --- --- --- --- --- --- --- --- */
+/*      <-- Questionnaire -->      */
+/* --- --- --- --- --- --- --- --- */
 
 section:nth-of-type(3) {
     display: flex;
@@ -495,7 +498,6 @@ section:nth-of-type(3) h1 {
     text-transform: uppercase;
     letter-spacing: .6rem;
     text-indent: .6rem;
-    margin: 0px 0;
 }
 
 section:nth-of-type(3) > div > div:nth-child(1),
