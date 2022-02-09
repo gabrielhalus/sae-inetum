@@ -21,34 +21,37 @@
         
     </head>
     <body>
+
+        <!-- Navigation -->
     
         <a href="#" id="btn-scroll-to-top"><i class="fas fa-arrow-right"></i></a>
 
-        <nav class="nav">
-            <a class="logo" href="#">
-                <img src="images/logo.svg" alt="">
-            </a>
+        <nav>
+            <a href="."><img src="images/logo.svg" alt=""></a>
 
-            <ul class="nav-links">
+            <ul>
                 <li><a href="#discover">Présentation</a></li>
                 <li><a href="#work">Activité</a></li>
                 <li><a href="#faq">Questionnaire</a></li>
-                <!-- <li><a href="#"><button class="cta">Nous contacter</button></a></li> -->
             </ul>
         </nav>
 
+        <!-- Header -->
+
         <header>
-            <div class="heading-title">
+            <div>
                 <hgroup>
                     <h1>Inetum</h1>
                     <h2>Nous façonnons votre flux numérique</h2>
                 </hgroup>
-                <a href="#discover"><button class="cta">Découvrez Inetum</button></a>
+                <a href="#discover">Découvrez Inetum</a>
             </div>
         </header>
 
-        <section id="discover" class="section">
-            <div class="gallery">
+        <!-- Présentation -->
+
+        <section id="discover">
+            <div>
                 <div id="txtdiscover">
                     <h1>Présentation</h1>
                     <p>Inetum est une entreprise basée en France proposant des services informatiques (ESN) aidant au développement numérique des entreprises en proposant des services de conseil et des logiciels d’accompagnement adaptés au secteur du client.</p>
@@ -65,23 +68,26 @@
             </div>
         </section>
 
-        <!-- Work -->
+        <!-- Travail -->
         
-        <section id="work" class="cards section">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
+        <section id="work">
+
+            <h1>Activité</h1>
+
+            <div>
+                <div>
+                    <div>
                         <img src="./images/card-hero-work.jpg" alt="card-hero-image">
                         <h2>Services</h2>
-                        <div class="front-card-content">
+                        <div>
                             <p>Inetum déploi des solutions adaptées au secteur et aux besoins des clients.</p>
                             <hr>
                             <p>Le chiffre d'affaire d'Inetum en 2020 s'élève à 733 772 000 euros (€).</p>
                             <p>(Hausse de 40,46% par rapport à 2019).</p>
                         </div>
                     </div>
-                    <div class="flip-card-back">
-                        <div class="back-card-content">
+                    <div>
+                        <div>
                             <h1>Services</h1>
                             <div>
                                 <h2>Prestation d'ingénieurie</h2>
@@ -110,17 +116,17 @@
                 </div>
             </div>
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
+            <div>
+                <div>
+                    <div>
                         <img src="./images/card-hero-wind-customer.jpg" alt="card-hero-image">
                         <h2>Clientèle</h2>
-                        <div class="front-card-content">
+                        <div>
                             <p>Ses clients sont principalement des entreprises qui cherchent à acquérire des solutions numériques dans différents domaines.</p>
                         </div>
                     </div>
-                    <div class="flip-card-back">
-                        <div class="back-card-content">
+                    <div>
+                        <div>
                             <h1>Clientèle</h1>
                             <div>
                                 <h2>Aérospatial & Défense</h2>
@@ -140,17 +146,17 @@
                 </div>
             </div>
 
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
+            <div>
+                <div>
+                    <div>
                         <img src="./images/card-hero-wind-marketing.jpg" alt="card-hero-image">
                         <h2>Concurrence</h2>
-                        <div class="front-card-content">
+                        <div>
                             <p>Les principaux concurrents d'Inetum opèrent dans les mêmes domaines, mais ils ont aussi des concurrents dans certains domaines spécifiques comme les télécoms, le conseil et la cybersécurité.</p>
                         </div>
                     </div>
-                    <div class="flip-card-back">
-                        <div class="back-card-content">
+                    <div>
+                        <div>
                             <h1>Concurrence</h1>
                             <div>
                                 <h2>Atos</h2>
@@ -173,107 +179,64 @@
             </div>
         </section>
 
-        <!-- Modals -->
+        <!-- Questionnaire -->
 
-        <div class="modal" id="modal1">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1>Secteurs</h1>
-                    <button class="modal-close"><i class="modal-close fas fa-times"></i></button>
+        <section id="faq">
+            <h1>Questionnaire</h1>
+            <div>
+                <div>
+                    <button class="accordion">Comment qualifieriez-vous INETUM numériquement parlant ?</button>
+                    <div>
+                        <p>Inetum est une ESN très avancée numériquement parlant, elle propose plusieurs services dans 26 pays et accompagne plusieurs secteurs dans leurs avancées technologiques, mais également dans leur transition écologique.</p>
+                    </div>
+                    <button class="accordion">Comment rendre les data base de l’entreprise plus écologiques ?</button>
+                    <div>
+                        <p>Les data centers représentent environ 6% de la consommation mondiale d’électricité ce qui engendre de fortes émissions de CO2, ainsi pour réduire l’impact des data centers et par conséquent des data base, des entreprises comme Submer qui est une entreprise espagnole spécialisée dans la fabrication de bacs d’immersion pour environnement liquide, le but étant de refroidir les data center en transmettant la chaleur à un liquide diélectrique (= qui ne conduit pas l’électricité), le PUE des data center (= Power Usage Effectiveness) qui est l’unité utilisée pour définir le quotient énergétique d’un data center passerait de 1,6 à 1,03 le but étant de se rapprocher le plus possible de 1.</p>
+                    </div>
+                    <button class="accordion">Pourquoi les femmes sont-elles sous-représentées dans l’entreprise ?</button>
+                    <div>
+                        <p>En général, l’activité de l’entreprise y joue beaucoup, en effet, étant donné que l’entreprise est tournée vers le numérique, les femmes sont souvent moins intéressées ou alors pas représentées par d’autres femmes de l’informatique par exemple, c’est donc pour cela que les hommes figurent bien plus que les femmes dans ce corps de métier.</p>
+                    </div>
+                    <button class="accordion">Comment faire en sorte que la parité soit respectée?</button>
+                    <div>
+                        <p>Je pense que les femmes nécessitent un exemple à suivre, un modèle, il faudrait qu’une femme fasse une découverte dans l’informatique pour motiver d’autres femmes à travailler dans ce domaine. De plus, malheureusement les entreprises en général, embauchent moins de femmes pour de plus hauts postes à cause du risque de tomber enceinte notamment.</p>
+                    </div>
+                    <button class="accordion">Quel(s) conseil(s) donneriez-vous pour améliorer l’organisation interne de l’entreprise ?</button>
+                    <div>
+                        <p>Nommer un CHO (Chief Happiness Officer) qui veillera au bien être des employés dans tous les secteurs de Inetum afin de pouvoir travailler dans de bonnes conditions.</p>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, saepe.
-                </div>
-                <div class="modal-footer">
-                    <!-- <button class="link modal-close">Close Modal</button> -->
-                </div>
-            </div> 
-        </div>
-
-        <div class="modal" id="modal2">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1>Transition</h1>
-                    <button class="modal-close"><i class="modal-close fas fa-times"></i></button>
-                </div>
-                <div class="modal-body">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatum!
-                </div>
-                <div class="modal-footer">
-                    <!-- <button class="link modal-close">Close Modal</button> -->
-                </div>
-            </div> 
-        </div>
     
-        <div class="modal" id="modal3">¬œ
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1>Clientèle</h1>
-                    <button class="modal-close"><i class="modal-close fas fa-times"></i></button>
-                </div>
-                <div class="modal-body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, iure!
-                </div>
-                <div class="modal-footer">
-                    <!-- <button class="link modal-close">Close Modal</button> -->
-                </div>
-            </div> 
-        </div>
-
-        <!-- Survey -->
-
-        <section id="faq" class="survey section">
-
-            <div class="faq1">
-                <button class="accordion">Comment qualifieriez-vous INETUM numériquement parlant ?</button>
-                <div class="panel">
-                    <p>Inetum est une ESN très avancée numériquement parlant, elle propose plusieurs services dans 26 pays et accompagne plusieurs secteurs dans leurs avancées technologiques, mais également dans leur transition écologique.</p>
-                </div>
-                <button class="accordion">Comment rendre les data base de l’entreprise plus écologiques ?</button>
-                <div class="panel">
-                    <p>Les data centers représentent environ 6% de la consommation mondiale d’électricité ce qui engendre de fortes émissions de CO2, ainsi pour réduire l’impact des data centers et par conséquent des data base, des entreprises comme Submer qui est une entreprise espagnole spécialisée dans la fabrication de bacs d’immersion pour environnement liquide, le but étant de refroidir les data center en transmettant la chaleur à un liquide diélectrique (= qui ne conduit pas l’électricité), le PUE des data center (= Power Usage Effectiveness) qui est l’unité utilisée pour définir le quotient énergétique d’un data center passerait de 1,6 à 1,03 le but étant de se rapprocher le plus possible de 1.</p>
-                </div>
-                <button class="accordion">Pourquoi les femmes sont-elles sous-représentées dans l’entreprise ?</button>
-                <div class="panel">
-                    <p>En général, l’activité de l’entreprise y joue beaucoup, en effet, étant donné que l’entreprise est tournée vers le numérique, les femmes sont souvent moins intéressées ou alors pas représentées par d’autres femmes de l’informatique par exemple, c’est donc pour cela que les hommes figurent bien plus que les femmes dans ce corps de métier.</p>
-                </div>
-                <button class="accordion">Comment faire en sorte que la parité soit respectée?</button>
-                <div class="panel">
-                    <p>Je pense que les femmes nécessitent un exemple à suivre, un modèle, il faudrait qu’une femme fasse une découverte dans l’informatique pour motiver d’autres femmes à travailler dans ce domaine. De plus, malheureusement les entreprises en général, embauchent moins de femmes pour de plus hauts postes à cause du risque de tomber enceinte notamment.</p>
-                </div>
-                <button class="accordion">Quel(s) conseil(s) donneriez-vous pour améliorer l’organisation interne de l’entreprise ?</button>
-                <div class="panel">
-                    <p>Nommer un CHO (Chief Happiness Officer) qui veillera au bien être des employés dans tous les secteurs de Inetum afin de pouvoir travailler dans de bonnes conditions.</p>
-                </div>
-            </div>
-
-            <div class="faq2">
-                <button class="accordion">Peut-on rendre les progiciels d’INETUM plus optimisés ?</button>
-                <div class="panel">
-                    <p>Les logiciels d’INETUM pourraient être plus optimisés si ils ciblaient des secteurs plus précis, cela implique de sacrifier une certaine part financière de l’entreprise pour plus s’investir dans la recherche et le développement des logiciels.</p>
-                </div>
-                <button class="accordion">Comment réduire la consommation énergétique de l’entreprise ?</button>
-                <div class="panel">
-                    <p>Tout d’abord, je dirais que, comme dit précédemment, rendre les programmes plus optimisés ferait moins tourner les serveurs. Malgré tout, ce n’est à mon sens pas nécessaire pour réduire la consommation. C’est pourquoi je propose plusieurs règles pour l’entreprise, comme par exemple délimiter des zones de chauffage ou encore aérer au lieu de chauffer ou de climatiser les pièces, en plus des data base qui peuvent être optimisées.</p>
-                </div>
-                <button class="accordion">Que pensez-vous de la digitalisation de l’entreprise ?</button>
-                <div class="panel">
-                    <p>Je la trouve assez avancée pour que l’on demande à Inetum des prototypes numériques et robotiques partout dans le monde. La technologie évolue de plus en plus et il est toujours possible d’améliorer les moyens numériques de l’entreprise pour toujours plus favoriser le travail des différents secteurs de l’entreprise.</p>
-                </div>
-                <button class="accordion">Comment voyez-vous l’évolution de l’entreprise dans une dizaine d’années ?</button>
-                <div class="panel">
-                    <p>Dans 10 ans, l'entreprise devrait avoir touché plus de secteurs dans plus de pays, et ainsi avoir de nouveaux moyens de financement pour des projets de recherches. De plus, je pense qu’avec le développement du numérique, INETUM à un avenir radieux mais devra quand même sacrifier une certaine part financière afin de la rendre plus respectueuse de l’environnement notamment avec certaines lois qui devraient être adoptées par l’Union Européenne et d’autres pays en général.</p>
-                </div>
-                <button class="accordion">Selon-vous, quelles sont les solutions afin de numériser l’entreprise tout en la rendant plus écologique ?</button>
-                <div class="panel">
-                    <p>Baser nos prototypes sur les énergies renouvelables afin qu’elles soient plus respectueuses de l’environnement.  Je pense aussi qu’elle se développera naturellement étant donné que les entreprises feront appel à INETUM, en effet, celles-cis sont peu qualifiées numériquement et donc demandent à INETUM, l’expansion géographique de INETUM joue aussi beaucoup et les entreprises etrangeres seront donc forcées de demander des services à INETUM, les questions précédentes permettent aussi de déterminer des solutions écologiques, notamment avec les data base qui consomment énormément.</p>
+                <div>
+                    <button class="accordion">Peut-on rendre les progiciels d’INETUM plus optimisés ?</button>
+                    <div>
+                        <p>Les logiciels d’INETUM pourraient être plus optimisés si ils ciblaient des secteurs plus précis, cela implique de sacrifier une certaine part financière de l’entreprise pour plus s’investir dans la recherche et le développement des logiciels.</p>
+                    </div>
+                    <button class="accordion">Comment réduire la consommation énergétique de l’entreprise ?</button>
+                    <div>
+                        <p>Tout d’abord, je dirais que, comme dit précédemment, rendre les programmes plus optimisés ferait moins tourner les serveurs. Malgré tout, ce n’est à mon sens pas nécessaire pour réduire la consommation. C’est pourquoi je propose plusieurs règles pour l’entreprise, comme par exemple délimiter des zones de chauffage ou encore aérer au lieu de chauffer ou de climatiser les pièces, en plus des data base qui peuvent être optimisées.</p>
+                    </div>
+                    <button class="accordion">Que pensez-vous de la digitalisation de l’entreprise ?</button>
+                    <div>
+                        <p>Je la trouve assez avancée pour que l’on demande à Inetum des prototypes numériques et robotiques partout dans le monde. La technologie évolue de plus en plus et il est toujours possible d’améliorer les moyens numériques de l’entreprise pour toujours plus favoriser le travail des différents secteurs de l’entreprise.</p>
+                    </div>
+                    <button class="accordion">Comment voyez-vous l’évolution de l’entreprise dans une dizaine d’années ?</button>
+                    <div>
+                        <p>Dans 10 ans, l'entreprise devrait avoir touché plus de secteurs dans plus de pays, et ainsi avoir de nouveaux moyens de financement pour des projets de recherches. De plus, je pense qu’avec le développement du numérique, INETUM à un avenir radieux mais devra quand même sacrifier une certaine part financière afin de la rendre plus respectueuse de l’environnement notamment avec certaines lois qui devraient être adoptées par l’Union Européenne et d’autres pays en général.</p>
+                    </div>
+                    <button class="accordion">Selon-vous, quelles sont les solutions afin de numériser l’entreprise tout en la rendant plus écologique ?</button>
+                    <div>
+                        <p>Baser nos prototypes sur les énergies renouvelables afin qu’elles soient plus respectueuses de l’environnement.  Je pense aussi qu’elle se développera naturellement étant donné que les entreprises feront appel à INETUM, en effet, celles-cis sont peu qualifiées numériquement et donc demandent à INETUM, l’expansion géographique de INETUM joue aussi beaucoup et les entreprises etrangeres seront donc forcées de demander des services à INETUM, les questions précédentes permettent aussi de déterminer des solutions écologiques, notamment avec les data base qui consomment énormément.</p>
+                    </div>
                 </div>
             </div>
             
         </section>
 
+        <!-- Footer -->
+
         <footer id="footer">
-            <img src="./images/logo-white.svg" alt="logo">
+            <a href="."><img src="./images/logo-white.svg" alt="logo"></a>
             <div>
                 <ul>
                     <li><a href="#discover">Présentation</a></li>
