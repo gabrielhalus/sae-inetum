@@ -234,19 +234,20 @@ section:nth-of-type(1) > div div:nth-child(1) {
     text-align: justify;
 }
 
+section:nth-of-type(1) h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+    text-indent: .6rem;
+    margin-bottom: 15px;
+}
+
 section:nth-of-type(1) p {
     width: 80%;
 }
 
 section:nth-of-type(1)  > div div:nth-child(1) p + p {
     margin-top: 10px;
-}
-
-section:nth-of-type(1) h1 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .6rem;
-    text-indent: .6rem;
 }
 
 section:nth-of-type(1)  > div div:nth-child(2) {
@@ -270,6 +271,8 @@ section:nth-of-type(1)  > div div:nth-child(2) div img {
 
     width: 70%;
     height: auto;
+
+    min-width: 400px;
 
     border-radius: 10px;
 
@@ -419,9 +422,18 @@ section:nth-of-type(2) > div > div > div:nth-child(1) > div {
 }
 
 section:nth-of-type(2) > div > div > div:nth-child(1) > div hr {
-    border: 0.5px solid var(--light-gray);
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 1px;
     margin: 15px 0;
+    opacity: .2;
+    
 }
+
+/* section:nth-of-type(2) > div > div > div:nth-child(1) > div hr {
+    border: 1px solid var(--light-gray);
+    margin: 15px 0;
+} */
 
 section:nth-of-type(2) > div > div > div:nth-child(1) > div p + p {
     font-size: 14px;
@@ -430,7 +442,7 @@ section:nth-of-type(2) > div > div > div:nth-child(1) > div p + p {
 
 section:nth-of-type(2) > div > div > div:nth-child(2) > div {
     height: 100%;
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -469,6 +481,7 @@ section:nth-of-type(2) > div > div > div:nth-child(2) > div p + p {
 
 section:nth-of-type(2) > div > div > div:nth-child(2) > div hr {
     border: 1px solid white;
+    border-radius: 1px;
     opacity: .4;
     margin: 15px auto;
     width: 85%;
@@ -537,7 +550,7 @@ section:nth-of-type(3) button:hover {
     background-color: #ccc;
 }
 
-section:nth-of-type(3) button:after {
+section:nth-of-type(3) button::after {
     content: '\02795'; /* Unicode (+) */
     font-size: 13px;
     color: #777;
@@ -549,12 +562,11 @@ section:nth-of-type(3) button:after {
     transform: translateY(-50%);
   }
   
-  .active:after {
+  section:nth-of-type(3) button.active::after {
     content: "\2796"; /* Unicode (-) */
   }
 
   section:nth-of-type(3) button + div {
-    /* margin-bottom: 15px; */
     padding: 0 18px;
     width: 90%;
 
@@ -623,7 +635,15 @@ footer > div {
     display: flex;
 }
 
-footer > div ul {
+footer > div div:nth-child(1) {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer > div div:nth-child(1) div:nth-child(1) ul {
     flex: 1;
 
     list-style: none;
@@ -633,12 +653,51 @@ footer > div ul {
     gap: 20px;
 }
 
-footer > div div {
+footer > div div:nth-child(1) div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+footer > div div:nth-child(1) div:nth-child(2) p,
+footer > div div:nth-child(1) div:nth-child(2) a {
+    line-height: 1;
+}
+
+footer > div div:nth-child(1) div:nth-child(2) a {
+    text-decoration: underline;
+
+}
+
+footer > div div:nth-child(2) {
     flex: 1;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
+    padding: 0 50px;
+}
+
+footer > div div input,
+footer > div div textarea,
+footer > div div button {
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    width: 90%;
+}
+
+footer > div div button {
+    border: 2px solid white;
+    background: none;
+    color: white;
+
+    transition: background .2s, color .2s;
+}
+
+footer > div div button:hover {
+    background: white;
+    color: black;
 }
